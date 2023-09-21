@@ -37,7 +37,7 @@ const SignUp = () => {
     <div  className='login-container'>
           <h2>Sign up Form</h2>
         <form onSubmit={signUp}  className='login-form'>
-            {success? <p>Sign up Success</p>: <p></p>}
+            {success? <p>Sign up was Successful, kindly login to proceed</p>: <p></p>}
         <input type='email'
              placeholder='Please Enter your Email'
              value={email}
@@ -65,7 +65,7 @@ const SignUp = () => {
              <button type='submit' className="Submit"> Sign Up</button>
              <NavLink to ='/' className="signup"> Already a Member? Sign in </NavLink>
              {
-              message ? <p>Password does not match</p> : <p></p>  
+              message ? <p className='error'>Password does not match</p> : <p></p>  
              }
         </form>
     </div>

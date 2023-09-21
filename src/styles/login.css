@@ -52,6 +52,9 @@ button:focus {
     color: rgb(112, 109, 109);
     text-decoration: none;
 }
+.error{
+    color: red;
+}
 
 @media only screen and (max-width: 600px) {
     .login-form >input {
@@ -65,7 +68,7 @@ button:focus {
     }
     ::placeholder {
         color: black;
-        font-size: 2vw;
+        font-size: 1.5vw;
     
       }
       .Submit{
