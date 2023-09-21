@@ -1,0 +1,44 @@
+.home-page{
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin-left: 22vw;
+    align-items: center;
+    justify-content: center;
+}
+.movie-list{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 100%;
+    margin-top: 2%;
+}
+
+.movie-card{
+    width: 12vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .home-page{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+       margin: 15% auto;
+       align-items: center;
+       justify-content: center;
+    }
+    .movie-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        padding: auto;
+        margin-top: 5%;
+       
+    }
+    .movie-card{
+        width: 35vw;
+        margin-left: 10%;
+    
+        
+    }
+
+}

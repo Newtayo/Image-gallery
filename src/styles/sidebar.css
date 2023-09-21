@@ -1,0 +1,53 @@
+.nav{
+    width: 20vw;
+    border-right: 2px solid rgb(226, 225, 225);
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    margin-right: 3%;
+    position: fixed;
+    align-items: center;
+    padding: 0%;
+}
+.img{
+    width: 15vw;
+    height: 20vh;
+    margin: 2% auto 10% auto;
+  }
+  .logout{
+    background-color: rgb(238, 149, 66);
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    font-size: 1vw;
+    border: none;
+    position: fixed;
+    bottom: 2%;
+    left: 5%;
+
+  }
+ 
+  @media only screen and (max-width: 600px) {
+
+    .nav{
+            width: 100%;
+            display: flex;
+            height: 5vh;
+            margin-bottom: 5%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    }
+    .img{
+        width: 15vw;
+        margin: 1% auto 10% 1%;
+      }
+      .logout{
+        font-size: 2vw;
+        position: fixed;
+        top: 1%;
+        left: 80%;
+      }
+    
+  }

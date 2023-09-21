@@ -1,0 +1,74 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+.login-container >h2{
+    color: rgb(238, 149, 66);
+}
+.login-form{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1% auto;
+    
+}
+.login-form >input {
+    width: 30vw;
+    margin-bottom: 1%;
+    border: none;
+}
+.divider{
+    border: 1px solid black;
+    border-top: none;
+    border-right: none;
+    border-left:none;
+    width: 30vw;
+}
+.Submit{
+    background-color: rgb(238, 149, 66);
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    font-size: 1vw;
+    border: none;
+}
+::placeholder {
+    color: black;
+    font-size: 1.3vw;
+
+  }
+
+  input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.signup{
+    color: rgb(112, 109, 109);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .login-form >input {
+        width: 90%;
+        margin-bottom: 1%;
+        border: none;
+        font-size: 3vw;
+    }
+    .divider{
+        width: 90%;
+    }
+    ::placeholder {
+        color: black;
+        font-size: 2vw;
+    
+      }
+      .Submit{
+        font-size: 3vw;
+      }
+}
