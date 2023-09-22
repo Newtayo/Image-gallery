@@ -21,8 +21,8 @@ import Sidebar from './components/Sidebar'
      
         <Routes>
         <Route path="/" element={<Login/>} exact />
-        <Route path="/signup" element={<SignUp/>} exact />
-        <Route path="/home" element={<Home />} exact />
+        <Route path="/signup" element={<SignUp/>}  />
+        <Route path="/home" element={<Home />}  />
         </Routes>
       </Router>
     </div>
