@@ -1,5 +1,5 @@
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { NavLink, useNavigate } from 'react-router-dom';
 import {auth} from '../firebase';
 import '../styles/login.css'
@@ -10,6 +10,13 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const [message, setMessage] = useState(false)
     const navigate = useNavigate()
+    const user = localStorage.getItem('user');
+
+    useEffect(() => {
+        if (user) {
+          navigate('/home');
+        }
+      }, [user, navigate]);
 
     const signIn =(e) => {
         e.preventDefault();
