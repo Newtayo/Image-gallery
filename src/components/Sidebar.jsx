@@ -24,7 +24,6 @@ const userSignOut = () => {
 if (user){
     return (
         <div className="nav">
-          <img src={logo} className="img" alt='logo' />
           <button type="button" onClick={userSignOut} className='logout'>Logout</button>
         </div>
       );  
@@ -33,7 +32,6 @@ if (user){
 else{
     return (
         <div className="nav">
-          <img src={logo} className="img" alt='logo' />
           <ul className="link">
           
           </ul>

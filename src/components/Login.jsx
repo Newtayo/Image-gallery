@@ -34,6 +34,7 @@ const Login = () => {
 
       return (
     <div className='login-container'>
+        <h2>Movie Gallery</h2>
         <h2>Login Form</h2>
         <form onSubmit={signIn} className='login-form'>
             <input type='email'

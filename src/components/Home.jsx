@@ -5,6 +5,7 @@ import '../styles/home.css';
 import gif from '../assets/loading.gif';
 import { useNavigate } from 'react-router-dom';
 
+
 const Home = () => {
   const user = localStorage.getItem('user');
   const { movieList, isLoading } = useSelector((state) => state.movie);
@@ -81,6 +82,7 @@ const Home = () => {
             placeholder="Search a movie"
             value={movieSearch}
             onChange={(e) => setMovieSearch(e.target.value)}
+            className ='form-input'
           />
           <button type="submit">Search</button>
         </form>
